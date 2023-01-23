@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <img class="logo" src="" alt="Логотип Sedona">
+
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-list-item current">
+            <a class="navigation-link" href="">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navigation-user">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="button button-all" href="#">
+              <span>
+                Хочу сюда
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-catalog">
+      <header class="inner-header">
+        <h1 class="main-catalog-title">
+          Гостиницы Седоны
+        </h1>
+        <h2 class="visually-hidden">
+          Каталог
+        </h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">
+                Главная
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">
+              Инфраструктура:
+            </legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="checkbox" name="waterpool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="checkbox" name="wi-fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">
+              Тип жилья:
+            </legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="radio" name="accommodation-type" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="radio" name="accommodation-type" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="radio" name="accommodation-type" value="appartement">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">
+              Стоимость, ₽:
+            </legend>
+          </fieldset>
+          <input class="button button-accept" type="submit" name="accept" value="Применить">
+          <input class="button button-reset" type="reset" name="reset" value="Сбросить">
+        </form>
+      </header>
+
+      <section class="subscribe">
+        <h2 class="visually-hidden">
+          Подписка на рассылку
+        </h2>
+        <p class="main-title">
+          Подпишитесь на рассылку
+        </p>
+        <p class="main-description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="email">
+            Ваш e-mail
+          </label>
+          <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+          <input type="submit" name="subscribe" value="Подписаться">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="button button-social" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
+                Вконтакте
+              </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button button-social" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">
+                Телеграм
+              </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">
+                Ютуб
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">
+          Контакты
+        </h2>
+        <a class="contacts-telephone" href="tel:+78128121212">
+          <span>
+            +7 (812) 812-12-12
+          </span>
+        </a>
+      </section>
+
+      <section class="footer-logo-htmlacademy">
+        <h2 class="visually-hidden">
+          Сайт разработчика
+        </h2>
+        <a href="https://htmlacademy.ru/profile/id2250307">
+          <img src="" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
