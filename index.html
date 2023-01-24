@@ -238,5 +238,58 @@
         </a>
       </section>
     </footer>
+
+    <!--Модальное окно-->
+    <form class="modal-window" action="https://echo.htmlacademy.ru" method="get">
+      <legend class="modal-window-title">
+        Поиск гостиницы в Седоне
+      </legend>
+
+      <button class="button button-close">
+        <img src="" alt="Крестик">
+        <span class="visually-hidden">
+          Закрыть
+        </span>
+      </button>
+
+      <label class="arrive-date">
+        Дата заезда:
+        <input type="date" name="arrive-date">
+        <!--Сообщение об ошибке-->
+      </label>
+
+      <label class="leave-date">
+        Дата выезда:
+        <input type="date" name="leave-date">
+        <!--Сообщение об ошибке-->
+      </label>
+
+      <label class="adults">
+        Взрослые:
+        <input type="number" name="adults" min="0" value="2">
+      </label>
+
+      <label class="children">
+        Дети:
+        <input type="number" name="children" min="0" value="2">
+        <button>
+          <img src="" alt="Подсказка">
+          <span class="visually-hidden">
+            Подсказка
+          </span>
+        </button>
+      </label>
+
+      <div class="children-tip">
+        <p>
+          Укажите количество детей,
+          которые будут с вами, возраст которых от 6 до 18 лет.
+          Дети до 6 лет размещаются бесплатно.
+        </p>
+      </div>
+
+      <input type="submit" name="submit" value="Найти">
+    </form>
+
   </body>
 </html>
