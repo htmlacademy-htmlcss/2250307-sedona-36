@@ -6,12 +6,14 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="logo" src="" alt="Логотип Sedona">
+      <a>
+        <img class="logo" src="" alt="Логотип Sedona" />
+      </a>
 
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list-item current">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link">Главная</a>
           </li>
           <li class="navigation-list-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -70,10 +72,14 @@
             <h3 class="advantages-title">
               Настоящий городок
             </h3>
-            <p class="advantages-description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-            <img src="" alt="Вид города Седона">
+            <div class="advantages-description">
+              <p>
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <div class="advantages-image">
+              <img src="" alt="Вид города Седона">
+            </div>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">
@@ -103,18 +109,22 @@
             <h3 class="advantages-title">
               Там есть мост дьявола
             </h3>
-            <p class="advantages-description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
-            <img src="" alt="Мост дьявола">
+            <div class="advantages-description">
+              <p>
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
+            <div class="advantages-image">
+              <img src="" alt="Мост дьявола">
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="services">
-        <p class="main-title">
+        <h2 class="main-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
-        </p>
+        </h2>
         <p class="main-description">
           Опытный персонал и качественное обслуживание!
         </p>
@@ -161,9 +171,7 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="button button-all" href="catalog.html">
-          <span>
-            Поиск гостиницы в Седоне
-          </span>
+          Поиск гостиницы в Седоне
         </a>
       </section>
 
@@ -183,7 +191,9 @@
             Ваш e-mail
           </label>
           <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <input type="submit" name="submit" value="Подписаться">
+          <button class="button button-subscribe">
+            Подписаться
+          </button>
         </form>
       </section>
     </main>

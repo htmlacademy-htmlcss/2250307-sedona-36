@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="logo" src="" alt="Логотип Sedona" />
+      <a href="index.html">
+        <img class="logo" src="" alt="Логотип Sedona" />
+      </a>
 
       <nav class="navigation">
         <ul class="navigation-list">
@@ -17,7 +19,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-list-item current">
-            <a class="navigation-link" href="">Гостиницы</a>
+            <a class="navigation-link">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +48,6 @@
     <main class="main-catalog">
       <header class="inner-header">
         <h1 class="main-catalog-title">Гостиницы Седоны</h1>
-        <h2 class="visually-hidden">Каталог</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -123,18 +124,24 @@
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           </fieldset>
 
-          <input class="button button-accept" type="submit" name="accept" value="Применить"/>
-          <input class="button button-reset" type="reset" name="reset" value="Сбросить"/>
+          <div class="catalog-filter-buttons">
+            <button class="button button-accept">
+              Применить
+            </button>
+            <button class="button button-reset">
+              Сбросить
+            </button>
+          </div>
         </form>
       </header>
 
       <section class="hotels">
         <h2 class="visually-hidden">
           Гостиницы
+          <span class="hotels-found">
+            Найдено гостиниц: 38
+          </span>
         </h2>
-        <span class="hotels-found">
-          Найдено гостиниц: 38
-        </span>
 
         <div class="hotels-sort">
           <label class="visually-hidden" for="hotels-sort-field">
