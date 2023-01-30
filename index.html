@@ -43,11 +43,9 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button class="button button-open-modal">
-              <span>
+            <a class="button button-all" href="#">
                 Хочу сюда
-              </span>
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -59,7 +57,6 @@
           Добро пожаловать в Седону!
         </h1>
         <img src="images/hero-welcome.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="458" height="352">
-        <img src="images/hero-end.png" alt="" width="1200" height="57">
       </section>
 
       <section class="advantages">
@@ -75,11 +72,11 @@
 
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">
-              Настоящий городок
-            </h3>
-            <div class="advantages-description">
-              <p>
+            <div class="advantages-text">
+              <h3 class="advantages-title">
+                Настоящий городок
+              </h3>
+              <p class="advantages-description">
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
@@ -112,11 +109,11 @@
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">
-              Там есть мост дьявола
-            </h3>
-            <div class="advantages-description">
-              <p>
+            <div class="advantages-text">
+              <h3 class="advantages-title">
+                Там есть мост дьявола
+              </h3>
+              <p class="advantages-description">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
             </div>
@@ -140,31 +137,43 @@
 
         <ul class="services-list">
           <li class="services-item">
-            <img src="images/advantage-icon-1.svg" alt="" width="75" height="72">
-            <h3 class="services-title">
-              Жильё
-            </h3>
-            <p class="services-description">
-              Рекомендуем пожить в настоящем мотеле, всё как в кино!
-            </p>
+            <div class="services-image">
+              <img src="images/advantage-icon-1.svg" alt="" width="75" height="72">
+            </div>
+            <div class="services-text">
+              <h3 class="services-title">
+                Жильё
+              </h3>
+              <p class="services-description">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
+            </div>
           </li>
           <li class="services-item">
-            <img src="images/advantage-icon-2.svg" alt="" width="75" height="72">
-            <h3 class="services-title">
-              Еда
-            </h3>
-            <p class="services-description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-            </p>
+            <div class="services-image">
+              <img src="images/advantage-icon-2.svg" alt="" width="75" height="72">
+            </div>
+            <div class="services-text">
+              <h3 class="services-title">
+                Еда
+              </h3>
+              <p class="services-description">
+                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </div>
           </li>
           <li class="services-item">
-            <img src="images/advantage-icon-3.svg" alt="" width="75" height="72">
-            <h3 class="services-title">
-              Сувениры
-            </h3>
-            <p class="services-description">
-              Не только китайского, но и настоящего местного производства!
-            </p>
+            <div class="services-image">
+              <img src="images/advantage-icon-3.svg" alt="" width="75" height="72">
+            </div>
+            <div class="services-text">
+              <h3 class="services-title">
+                Сувениры
+              </h3>
+              <p class="services-description">
+                Не только китайского, но и настоящего местного производства!
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -200,7 +209,7 @@
             Ваш e-mail
           </label>
           <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="button button-subscribe">
+          <button class="button button-subscribe" type="submit">
             Подписаться
           </button>
         </form>
@@ -245,9 +254,7 @@
           Контакты
         </h2>
         <a class="contacts-telephone" href="tel:+78128121212">
-          <span>
             +7 (812) 812-12-12
-          </span>
         </a>
       </section>
 
@@ -268,7 +275,7 @@
         Поиск гостиницы в Седоне
       </legend>
 
-      <button class="button button-close">
+      <button class="button button-close" type="button">
         <img src="" alt="">
         <span class="visually-hidden">
           Закрыть
@@ -293,7 +300,7 @@
       <label class="children">
         Дети:
         <input type="number" name="children" min="0" value="2">
-        <button>
+        <button class="button button-tip" type="button">
           <img src="" alt="Подсказка">
           <span class="visually-hidden">
             Подсказка
