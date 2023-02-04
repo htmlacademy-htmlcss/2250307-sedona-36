@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -158,10 +159,10 @@
       <section class="hotels">
         <h2 class="visually-hidden">
           Гостиницы
-          <span class="hotels-found">
-            Найдено гостиниц: 38
-          </span>
         </h2>
+        <span class="hotels-found">
+          Найдено гостиниц: 38
+        </span>
 
         <div class="hotels-sort">
           <label class="visually-hidden" for="hotels-sort-field">
@@ -177,19 +178,19 @@
 
         <div class="hotels-view">
           <button class="button hotels-view-grid" type="button">
-            <img src="images/view-1.svg" alt="" width="48" height="48">
+            <img src="images/view-1.svg" alt="" width="16" height="14">
             <span class="visually-hidden">
               Отобразить сеткой
             </span>
           </button>
           <button class="button hotels-view-card" type="button">
-            <img src="images/view-2.svg" alt="" width="48" height="48">
+            <img src="images/view-2.svg" alt="" width="16" height="14">
             <span class="visually-hidden">
               Отобразить карточками
             </span>
           </button>
           <button class="button hotels-view-list" type="button">
-            <img src="images/view-3.svg" alt="" width="48" height="48">
+            <img src="images/view-3.svg" alt="" width="16" height="14">
             <span class="visually-hidden">
               Отобразить списком
             </span>
@@ -368,6 +369,11 @@
             </a>
           </li>
           <li class="pagination-item">
+            <a class="pagination-link pagination-more" href="#">
+              . . .
+            </a>
+          </li>
+          <li class="pagination-item">
             <a class="pagination-link" href="#">
               10
             </a>
@@ -375,7 +381,7 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe-catalog">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="main-title">Подпишитесь на рассылку</p>
         <p class="main-description">
