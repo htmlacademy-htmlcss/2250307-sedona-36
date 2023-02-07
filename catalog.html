@@ -55,7 +55,7 @@
     <main class="main-catalog">
       <header class="inner-header">
         <h1 class="main-catalog-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <img src="images/home-icon.svg" alt="" width="13" height="15">
@@ -177,7 +177,7 @@
         </div>
 
         <div class="hotels-view">
-          <button class="button hotels-view-grid" type="button">
+          <button class="button hotels-view-grid current" type="button">
             <img src="images/view-1.svg" alt="" width="16" height="14">
             <span class="visually-hidden">
               Отобразить сеткой
@@ -369,9 +369,9 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-more" href="#">
+            <button class="pagination-link pagination-more" type="button">
               . . .
-            </a>
+            </button>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">
@@ -382,16 +382,24 @@
       </section>
 
       <section class="subscribe-catalog">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="main-title">Подпишитесь на рассылку</p>
+        <h2 class="visually-hidden">
+          Подписка на рассылку
+        </h2>
+        <p class="main-title">
+          Подпишитесь на рассылку
+        </p>
         <p class="main-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
 
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="email"> Ваш e-mail </label>
-          <input type="email" name="email" id="email" placeholder="Ваш e-mail" required/>
-          <input type="submit" name="subscribe" value="Подписаться"/>
+        <form class="subscribe-catalog-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="email">
+            Ваш e-mail
+          </label>
+          <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+          <button class="button button-subscribe" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
