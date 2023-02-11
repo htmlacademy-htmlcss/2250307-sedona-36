@@ -26,8 +26,7 @@
 }
 
 html {
-  padding: 0 40px;
-  background-color: #F2F2F2;
+  height: 100%;
 }
 
 body {
@@ -38,12 +37,48 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
   margin: 0;
+  background-color: #F2F2F2;
+  height: 100%;
 }
 
-.page-header .navigation-list {
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  width: 140px;
+  margin-right: 28px;
+  padding: 0;
+}
+
+.navigation-list {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.navigation ul {
   list-style-type: none;
 }
 
@@ -68,15 +103,23 @@ body {
   border-radius: 4px;
 }
 
+.main-container {
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .welcome {
   background: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .welcome img {
-  padding-top: 51px;
-  padding-bottom: 82px;
+  display: block;
+  margin: 0 auto;
 }
 
 .welcome::after {
@@ -96,8 +139,8 @@ body {
   line-height: 26px;
 }
 
-h3 {
-  font-weight: 700;
+.advantages-title {
+font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -106,27 +149,55 @@ h3 {
 
 .main-index .advantages-list {
   list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantages-list .advantages-item {
   background-color: #83B3D333;
+
+  width: 400px;
 }
 
 .advantages-list .with-image {
   background-color: #82B3D3;
   color: #ffffff;
+
+  width: 1200px;
 }
 
 .with-image .advantages-title {
   color: inherit;
 }
 
+.services-title {
+font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .advantages-list .advantages-item:nth-of-type(even) {
   background-color: #83B3D31F;
 }
 
-.main-index .services-list{
+.main-index .services-list {
   list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-list .services-item {
+  width: 400px;
 }
 
 .services-list .services-item:nth-of-type(odd) {
@@ -170,6 +241,18 @@ h3 {
   border-radius: 0 4px 4px 0;
 }
 
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 192px;
+  margin-right: 236.5px;
+  padding: 0;
+}
+
 .footer-social .social-list {
   list-style-type: none;
 }
@@ -178,11 +261,23 @@ h3 {
   text-decoration: none;
 }
 
+.footer-contacts {
+  width: 331px;
+  margin: 0;
+  padding: 0;
+}
+
 .footer-contacts .contacts-telephone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: inherit;
+}
+
+.footer-logo-htmlacademy {
+  max-width: 115px;
+  margin-left: auto;
+  padding: 0;
 }
 
 .inner-header {
@@ -211,6 +306,38 @@ h3 {
   line-height: 21px;
 }
 
+.catalog-filter {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group.infrastructure {
+  margin: 0;
+  width: 151px;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.catalog-filter-group.accommodation {
+  margin: 0;
+  width: 151px;
+  padding: 0;
+}
+
+.catalog-filter-group.price {
+  margin: 0;
+  width: 288px;
+  margin-left: auto;
+  padding: 0;
+}
+
 .catalog-filter .catalog-filter-group {
   border: 0;
 }
@@ -219,6 +346,12 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.catalog-filter-buttons {
+  width: 191px;
+  margin-left: 70px;
+  padding: 0;
 }
 
 .catalog-filter-buttons .button {
@@ -259,6 +392,14 @@ h3 {
   color: inherit;
 }
 
+.hotel-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .hotel-cards-list {
   list-style-type: none;
 }
@@ -269,12 +410,6 @@ h3 {
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
-}
-
-.hotel-cards-item .hotel-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
 }
 
 .hotel-buttons .button {
