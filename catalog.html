@@ -158,49 +158,51 @@
         </header>
 
         <section class="hotels">
-          <h2 class="visually-hidden">
-            Гостиницы
-          </h2>
-          <span class="hotels-found">
-            Найдено гостиниц: 38
-          </span>
+          <div class="sorting-container">
+            <h2 class="visually-hidden">
+              Гостиницы
+            </h2>
+            <span class="hotels-found">
+              Найдено гостиниц: 38
+            </span>
 
-          <div class="hotels-sort">
-            <label class="visually-hidden" for="hotels-sort-field">
-              Показать гостиницы:
-            </label>
-            <select name="hotels-sort-field" id="hotels-sort-field">
-              <option value="cheap" selected>Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="low-rate">Сначала с низким рейтингом</option>
-              <option value="high-rate">Сначала с высоким рейтингом</option>
-            </select>
+            <div class="hotels-sort">
+              <label class="visually-hidden" for="hotels-sort-field">
+                Показать гостиницы:
+              </label>
+              <select name="hotels-sort-field" id="hotels-sort-field">
+                <option value="cheap" selected>Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="low-rate">Сначала с низким рейтингом</option>
+                <option value="high-rate">Сначала с высоким рейтингом</option>
+              </select>
+            </div>
+
+            <div class="hotels-view">
+              <a class="button hotels-view-grid current" href="">
+                <img src="images/view-1.svg" alt="" width="16" height="14">
+                <span class="visually-hidden">
+                  Отобразить сеткой
+                </span>
+              </a>
+              <a class="button hotels-view-card" href="">
+                <img src="images/view-2.svg" alt="" width="16" height="14">
+                <span class="visually-hidden">
+                  Отобразить карточками
+                </span>
+              </a>
+              <a class="button hotels-view-list" href="">
+                <img src="images/view-3.svg" alt="" width="16" height="14">
+                <span class="visually-hidden">
+                  Отобразить списком
+                </span>
+              </a>
+            </div>
           </div>
 
-          <div class="hotels-view">
-            <a class="button hotels-view-grid current" href="">
-              <img src="images/view-1.svg" alt="" width="16" height="14">
-              <span class="visually-hidden">
-                Отобразить сеткой
-              </span>
-            </a>
-            <a class="button hotels-view-card" href="">
-              <img src="images/view-2.svg" alt="" width="16" height="14">
-              <span class="visually-hidden">
-                Отобразить карточками
-              </span>
-            </a>
-            <a class="button hotels-view-list" href="">
-              <img src="images/view-3.svg" alt="" width="16" height="14">
-              <span class="visually-hidden">
-                Отобразить списком
-              </span>
-            </a>
-          </div>
-
-          <ul class="hotel-cards-list">
-            <li class="hotel-cards-item">
-              <img class="hotel-image" src="images/hotel-1.jpg" alt="Окружение гостиницы Amara Resort & Spa" width="300" height="212">
+            <ul class="hotel-cards-list">
+              <li class="hotel-cards-item">
+                <img class="hotel-image" src="images/hotel-1.jpg" alt="Окружение гостиницы Amara Resort & Spa" width="300" height="212">
 
               <h3 class="hotel-title">
                 Amara Resort & Spa
