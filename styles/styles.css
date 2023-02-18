@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,18 +63,20 @@ body {
 .page-header {
   display: flex;
   align-items: flex-start;
-  width: 1060px;
+  width: 100%;
+  padding: 0 70px;
   margin: 0 auto;
 }
 
 .logo-link {
-  display: block;
   width: 140px;
-  max-height: 64px;
   margin-right: 28px;
-  padding: 0;
-  align-self: flex-start;
   position: relative;
+}
+
+.logo-link img {
+  position: absolute;
+  left: 0;
 }
 
 .navigation ul {
@@ -91,7 +99,6 @@ body {
   color: #000000;
 
   display: block;
-  box-sizing: border-box;
   padding: 20px 16px;
   min-width: 100px;
   min-height: 64px;
@@ -126,7 +133,6 @@ body {
   color: #ffffff;
 
   display: block;
-  box-sizing: border-box;
   width: 160px;
   padding: 8px 34px;
   background: #756157;
@@ -208,7 +214,7 @@ body {
 .advantages-list .advantages-item {
   background-color: #83B3D333;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-item {
@@ -218,13 +224,13 @@ body {
 }
 
 .advantages-text {
-  padding: 0 85px 0 85px;
+  padding: 102px 85px;
 }
 
 .advantages-list .with-image {
   background-color: #82B3D3;
   color: #ffffff;
-  width: 1200px;
+  width: 100%;
 
   display: flex;
   flex-direction: row;
@@ -238,7 +244,11 @@ body {
   color: inherit;
 }
 
-/*схлопнула текст пока что тк нет линии в середине*/
+.advantages-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .advantages-title {
   margin: 0;
 }
@@ -277,7 +287,7 @@ body {
 
 .services-list .services-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 
   display: flex;
   flex-direction: column;
@@ -285,12 +295,7 @@ body {
 }
 
 .services-content {
-  padding: 0 85px;
-}
-
-.services-item img {
-  display: block;
-  margin: 0 auto;
+  padding: 81px 85px;
 }
 
 .services-list .services-item:nth-of-type(odd) {
@@ -310,7 +315,6 @@ body {
   color: #ffffff;
 
   display: block;
-  box-sizing: border-box;
   padding: 8px 50px;
   width: 376px;
   background: #756157;
@@ -343,13 +347,15 @@ body {
 
 .subscribe-form input {
   display: block;
-  box-sizing: border-box;
   width: 452px;
   height: 52px;
-  padding: 14px 345px 14px 20px;
+  padding: 14px 20px;
   border: 0;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
+
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .button-subscribe {
@@ -360,7 +366,6 @@ body {
   color: inherit;
 
   display: block;
-  box-sizing: border-box;
   width: 232px;
   padding: 8px;
   background-color: #82B3D3;
@@ -370,14 +375,15 @@ body {
 
 .footer-container {
   display: flex;
-  width: 1060px;
+  width: 100%;
+  padding: 0 70px;
   margin: 40px auto 30px auto;
   align-items: center;
 }
 
 .footer-social {
   max-width: 200px;
-  margin-right: 236.5px;
+  margin-right: 236px;
   padding: 0;
 }
 
@@ -392,7 +398,7 @@ body {
 .social-list .button-social {
   text-decoration: none;
   display: block;
-  min-width: 47.33px;
+  min-width: 47px;
   min-height: 40px;
 }
 
@@ -457,8 +463,6 @@ body {
 .catalog-filter {
   display: flex;
   align-items: flex-end;
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .catalog-filter-title {
@@ -477,14 +481,6 @@ body {
 
 .catalog-filter-item {
   margin-top: 16px;
-}
-
-.catalog-filter-item input {
-  display: inline-block;
-  margin: 0;
-  margin-right: 16px;
-  width: 20px;
-  height: 20px;
 }
 
 .catalog-filter-group {
@@ -541,9 +537,8 @@ body {
 .sorting-container {
   display: flex;
   align-items: center;
-  padding: 0;
   margin: 50px auto 40px auto;
-  width: 1060px;
+  padding: 0 70px;
 }
 
 .hotels-found {
@@ -582,7 +577,6 @@ body {
 
 .hotels-view .button {
   display: block;
-  box-sizing: border-box;
   width: 48px;
   height: 48px;
   padding: 17px 16px;
@@ -596,15 +590,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1060px;
-  padding: 0;
-  margin: 0 auto;
+  padding: 0 70px;
   margin-bottom: 40px;
 }
 
 .hotel-cards-item {
   display: block;
-  box-sizing: border-box;
   width: 340px;
   padding: 20px;
   border-radius: 4px;
@@ -628,7 +619,6 @@ body {
   color: #ffffff;
 
   display: block;
-  box-sizing: border-box;
   width: 140px;
   padding: 8px;
   border-radius: 4px;
@@ -651,7 +641,6 @@ body {
   text-transform: uppercase;
 
   display: block;
-  box-sizing: border-box;
   width: 140px;
   padding: 9px 22px 8px 23px;
   background: #F2F2F2;
@@ -675,7 +664,6 @@ body {
   text-decoration: none;
 
   display: block;
-  box-sizing: border-box;
   width: 60px;
   height: 60px;
   padding: 10px;
@@ -710,13 +698,15 @@ body {
 
 .subscribe-catalog-form input {
   display: block;
-  box-sizing: border-box;
   width: 452px;
   height: 52px;
   padding: 14px 345px 14px 20px;
   border: 0;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
+
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .subscribe-catalog-form .button-subscribe {
