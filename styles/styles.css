@@ -224,7 +224,7 @@ body {
 }
 
 .advantages-text {
-  padding: 102px 85px;
+  padding: 85px;
 }
 
 .advantages-list .with-image {
@@ -245,6 +245,7 @@ body {
 }
 
 .advantages-image img {
+  display: block;
   height: 100%;
   object-fit: cover;
 }
@@ -361,11 +362,13 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
 
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
 }
 
 .button-subscribe {
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -523,6 +526,7 @@ body {
 }
 
 .catalog-filter-buttons .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -571,6 +575,7 @@ body {
   border-radius: 4px;
   padding: 14px 20px;
 
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: inherit;
@@ -595,30 +600,49 @@ body {
 .hotel-cards-list {
   list-style-type: none;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 70px;
   margin-bottom: 40px;
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 }
 
 .hotel-cards-item {
-  display: block;
-  width: 340px;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
-  margin-bottom: 20px;
+}
+
+.hotel-cards-item img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .hotel-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-align: left;
   color: #000000;
+  margin: 16px 0;
 }
 
-.hotel-buttons .button {
+.hotel-information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.hotel-price.type {
+  text-align: left;
+}
+
+.hotel-price.value {
+  text-align: right;
+}
+
+.hotel-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -633,17 +657,19 @@ body {
   background: #756157;
 }
 
-.button.to-favorites {
+.to-favorites {
+  font-family: inherit;
   background: #82B3D3;
   border: 0;
 }
 
-.button.in-favorites {
+.in-favorites {
+  font-family: inherit;
   background: #7DB54F;
   border: 0;
 }
 
-.hotel-rate span {
+.hotel-rate {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -717,6 +743,7 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
 
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
 }
