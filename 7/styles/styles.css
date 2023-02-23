@@ -1,0 +1,753 @@
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+
+  margin: 0;
+  background-color: #F2F2F2;
+  height: 100%;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  width: 140px;
+  margin-right: 28px;
+  position: relative;
+}
+
+.logo-link img {
+  position: absolute;
+  left: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation-list {
+  max-width: 460px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-list .navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+
+  display: block;
+  padding: 20px 16px;
+  min-width: 100px;
+  min-height: 64px;
+}
+
+.navigation-user {
+  max-width: 310px;
+  padding: 0;
+  margin-left: auto;
+}
+
+.navigation-user-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-user-list .navigation-link {
+  display: block;
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.navigation-user .button-all {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  display: block;
+  width: 160px;
+  padding: 8px 34px;
+  background: #756157;
+  border-radius: 4px;
+}
+
+.main-container {
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome {
+  background: url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 51px;
+}
+
+.welcome img {
+  display: block;
+  margin: 0 auto 25px auto;
+}
+
+.welcome::after {
+  content: "";
+  display: block;
+  background: url("../images/hero-end.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 57px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.main-description {
+  font-size: 22px;
+  line-height: 26px;
+
+  margin: 0;
+  margin-top: 20px;
+}
+
+.advantages .main-description {
+  margin-top: 25px;
+}
+
+.advantages {
+  padding-top: 69px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-list {
+  list-style-type: none;
+
+  margin: 0;
+  margin-top: 90px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-list .advantages-item {
+  background-color: #83B3D333;
+  width: 400px;
+  min-height: 385px;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages-text {
+  padding: 85px;
+}
+
+.advantages-list .with-image {
+  background-color: #82B3D3;
+  color: #ffffff;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.with-image .advantages-text {
+  align-self: center;
+}
+
+.with-image .advantages-title {
+  color: inherit;
+}
+
+.advantages-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.advantages-title {
+  margin: 0;
+}
+
+.advantages-description {
+  margin: 0;
+}
+
+.advantages-list .advantages-item:nth-of-type(even) {
+  background-color: #83B3D31F;
+}
+
+.services {
+  padding-top: 64px;
+}
+
+.services-list {
+  list-style-type: none;
+
+  margin: 0;
+  margin-top: 64px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 30px 0;
+}
+
+.services-list .services-item {
+  width: 400px;
+  min-height: 385px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-content {
+  padding: 81px 85px;
+}
+
+.services-list .services-item:nth-of-type(odd) {
+  background-color: #83B3D31F;
+}
+
+.hotel-search {
+  padding: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-search .button-all {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  display: block;
+  padding: 8px 50px;
+  width: 376px;
+  background: #756157;
+  border-radius: 4px;
+  margin: 0;
+  margin-top: 54px;
+}
+
+.main-index .subscribe {
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #ffffff;
+}
+
+.subscribe {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe .main-title {
+  color: inherit;
+}
+
+.subscribe-form {
+  margin: 0;
+  margin-top: 54px;
+  display: flex;
+}
+
+.subscribe-form input {
+  display: block;
+  width: 452px;
+  height: 52px;
+  padding: 14px 20px;
+  border: 0;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-subscribe {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: inherit;
+
+  display: block;
+  width: 232px;
+  padding: 8px;
+  background-color: #82B3D3;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  padding: 0 70px;
+  margin: 40px auto 30px auto;
+  align-items: center;
+}
+
+.footer-social {
+  max-width: 200px;
+  margin-right: 236px;
+  padding: 0;
+}
+
+.social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-list .button-social {
+  text-decoration: none;
+  display: block;
+  min-width: 47px;
+  min-height: 40px;
+}
+
+.footer-contacts {
+  min-width: 331px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contacts .contacts-telephone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: inherit;
+}
+
+.footer-logo-htmlacademy {
+  max-width: 115px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.inner-header {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  padding: 70px;
+  padding-top: 35px;
+}
+
+.inner-header .main-catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+
+  margin: 0;
+}
+
+.inner-header .breadcrumbs-list {
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px auto 40px 0;
+  padding: 0;
+}
+
+.breadcrumbs-list .breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+
+  display: block;
+  min-width: 13px;
+}
+
+.catalog-filter {
+  display: flex;
+  align-items: flex-end;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-bottom: 16px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-item {
+  margin-top: 16px;
+}
+
+.catalog-filter-group {
+  border: 0;
+}
+
+.catalog-filter-group.infrastructure {
+  margin: 0;
+  min-width: 150px;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.catalog-filter-group.accommodation {
+  margin: 0;
+  min-width: 150px;
+  padding: 0;
+}
+
+.catalog-filter-group.price {
+  margin: 0;
+  min-width: 288px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.catalog-filter-buttons .button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: inherit;
+
+  min-width: 191px;
+  min-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  padding: 0;
+}
+
+.catalog-filter-buttons .button-reset {
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 32px;
+}
+
+.sorting-container {
+  display: flex;
+  align-items: center;
+  margin: 50px auto 40px auto;
+  padding: 0 70px;
+}
+
+.hotels-found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+
+  max-width: 360px;
+  margin-right: 200px;
+}
+
+.hotels-sort {
+  min-width: 292px;
+  padding: 0;
+  margin: 0;
+}
+
+.hotels-sort select {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 14px 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.hotels-view {
+  width: 160px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotels-view .button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 17px 16px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.hotel-cards-list {
+  list-style-type: none;
+
+  margin-bottom: 40px;
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+}
+
+.hotel-cards-item {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+}
+
+.hotel-cards-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hotel-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #000000;
+  margin: 16px 0;
+}
+
+.hotel-information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.hotel-price.type {
+  text-align: left;
+}
+
+.hotel-price.value {
+  text-align: right;
+}
+
+.hotel-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  display: block;
+  width: 140px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #756157;
+}
+
+.to-favorites {
+  font-family: inherit;
+  background: #82B3D3;
+  border: 0;
+}
+
+.in-favorites {
+  font-family: inherit;
+  background: #7DB54F;
+  border: 0;
+}
+
+.hotel-rate {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  display: block;
+  width: 140px;
+  padding: 9px 22px 8px 23px;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-list {
+  list-style-type: none;
+
+  display: flex;
+  gap: 8px;
+  margin: 40px 70px 60px 70px;
+  padding: 0;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  background: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-more {
+  background: #ffffff;
+  color: #000000;
+}
+
+.subscribe-catalog {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-catalog .main-title {
+  color: #000000;
+}
+
+.subscribe-catalog-form {
+  margin: 0;
+  margin-top: 54px;
+
+  display: flex;
+}
+
+.subscribe-catalog-form input {
+  display: block;
+  width: 452px;
+  height: 52px;
+  padding: 14px 20px;
+  border: 0;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscribe-catalog-form .button-subscribe {
+  color: #ffffff;
+}
