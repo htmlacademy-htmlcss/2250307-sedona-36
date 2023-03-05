@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="container">
       <header class="page-header">
         <a class="logo-link">
-          <img src="images/logo-sedona.svg" alt="Логотип Sedona" width="140" height="70"/>
+          <img src="images/logo-sedona.svg" alt="Логотип Sedona." width="140" height="70">
         </a>
 
         <nav class="navigation">
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a data-count="12" class="navigation-link navigation-icon favourites-icon" href="#">
+              <a class="navigation-link navigation-icon favourites-icon" href="#" data-count="12">
                 <svg width="20" aria-hidden="true" focusable="false" height="20" viewBox="0 0 20 20" fill xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.9 19C9.6 19 9.3 18.9 9.1 18.6C3.7 12.5 2.4 11.1 2.1 10.7C1.4 9.8 1 8.6 1 7.4C1 4.4 3.4 2 6.5 2C7.8 2 9 2.5 10 3.3C11 2.5 12.3 2 13.5 2C16.5 2 19 4.4 19 7.4C19 8.7 18.5 9.9 17.7 10.8L10.7 18.7C10.5 18.9 10.3 19 9.9 19ZM3.9 9.5C4.2 9.9 7.4 13.5 10 16.4L16.2 9.4C16.7 8.9 16.9 8.2 16.9 7.4C16.9 5.6 15.4 4.1 13.6 4.1C12.6 4.1 11.6 4.6 10.9 5.4C10.6 5.7 10.3 5.8 10 5.8C9.7 5.8 9.4 5.6 9.2 5.4C8.5 4.6 7.5 4.1 6.5 4.1C4.7 4.1 3.2 5.6 3.2 7.4C3.1 8.3 3.5 9 3.9 9.5C3.8 9.5 3.8 9.5 3.9 9.5Z" fill/>
                 </svg>
@@ -88,7 +88,7 @@
                 </p>
               </div>
               <div class="advantages-image">
-                <img src="images/advantages-photo-town.jpg" alt="Вид города Седона" width="800" height="385">
+                <img src="images/advantages-photo-town.jpg" alt="Вид города Седона." width="800" height="385">
               </div>
             </li>
             <li class="advantages-item">
@@ -123,7 +123,7 @@
             </li>
             <li class="advantages-item with-image">
               <div class="advantages-image">
-                <img src="images/advantages-photo-bridge.jpg" alt="Мост дьявола" width="800" height="385">
+                <img src="images/advantages-photo-bridge.jpg" alt="Мост дьявола." width="800" height="385">
               </div>
               <div class="advantages-text">
                 <h3 class="advantages-title">
@@ -238,7 +238,7 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
 
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">
               Ваш e-mail
             </label>
@@ -324,7 +324,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg class="close-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill/>
           </svg>
@@ -422,7 +422,9 @@
               </div>
             </div>
 
-            <input class="button-find" type="submit" name="submit" value="Найти">
+            <button class="button-find" type="submit">
+              Найти
+            </button>
           </form>
         </section>
       </div>
