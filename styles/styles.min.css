@@ -745,7 +745,8 @@ body {
 
 .human-input-group input::-webkit-outer-spin-button,
 .human-input-group input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1141,11 +1142,14 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+
+  -moz-appearance: textfield;
 }
 
 .price-input::-webkit-outer-spin-button,
 .price-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1282,7 +1286,8 @@ body {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .hotels-sort select:hover {
@@ -1371,11 +1376,13 @@ body {
 }
 
 .hotel-about-link:hover .hotel-title {
-  text-decoration: underline #000000;
+  -webkit-text-decoration: underline #000000;
+          text-decoration: underline #000000;
 }
 
 .hotel-about-link:active .hotel-title {
-  text-decoration: underline rgba(0, 0, 0, 0.6);
+  -webkit-text-decoration: underline rgba(0, 0, 0, 0.6);
+          text-decoration: underline rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
 }
 
