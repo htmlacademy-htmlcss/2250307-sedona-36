@@ -1366,7 +1366,20 @@ body {
   min-width: 0;
 }
 
-.hotel-cards-item img {
+.hotel-about-link {
+  text-decoration: none;
+}
+
+.hotel-about-link:hover .hotel-title {
+  text-decoration: underline #000000;
+}
+
+.hotel-about-link:active .hotel-title {
+  text-decoration: underline rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.hotel-image {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -1574,7 +1587,7 @@ body {
 }
 
 .catalog-filter-buttons .button-reset:focus {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .catalog-filter-buttons .button-reset:active {
