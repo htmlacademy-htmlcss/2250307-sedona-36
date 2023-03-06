@@ -266,12 +266,12 @@ body {
 }
 
 .advantages .main-title {
-  max-width: 620px;
+  max-width: 650px;
 }
 
 .advantages .main-description {
   margin-top: 25px;
-  max-width: 651px;
+  max-width: 660px;
 }
 
 .advantages {
@@ -304,7 +304,7 @@ body {
 
 .advantages-description {
   margin: 0;
-  min-width: 230px;
+  min-width: 235px;
 }
 
 .advantages-list {
@@ -330,7 +330,7 @@ body {
 }
 
 .advantages-text {
-  padding: 85px;
+  padding: 85px 80px;
 }
 
 .advantages-list .with-image {
@@ -528,7 +528,7 @@ body {
   display: flex;
   width: 100%;
   padding: 0 70px;
-  margin: 40px auto 30px auto;
+  margin: 45px auto 35px auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -1147,10 +1147,6 @@ body {
 .price-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-.price-input {
-  -moz-appearance: textfield;
 }
 
 .price-input-maximum {
